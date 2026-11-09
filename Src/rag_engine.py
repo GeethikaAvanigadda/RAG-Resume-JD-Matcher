@@ -25,7 +25,7 @@ def get_llm(model : str ="qwen/qwen3.8-27b", temperature: float =0.2):
 
 
 def get_embeddings():
-    return HuggingFaceEmbeddings(model = "sentence-transformers/all-MiniLM-L6-v2")
+    return HuggingFaceEmbeddings(model_name = "sentence-transformers/all-MiniLM-L6-v2")
 
 
 def load_text_file(file_path:str, source_name:str, doc_type:str):
